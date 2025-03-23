@@ -1,20 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Dynamic Project Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <!-- Sidebar for Class Works -->
+
+        <!-- Sidebar -->
         <aside class="sidebar">
-            <h2>Class Works</h2>
-            <ul id="task-list"></ul>
+            <div>
+                <h2>Class Works</h2>
+                <ul id="task-list"></ul>
+            </div>
+
+            <!-- Back to Home Button at Bottom -->
+            <div class="back-home">
+                <button onclick="document.getElementById('task-frame').src='landing.html'">
+                    ← Back to Home
+                </button>
+            </div>
         </aside>
 
-        <!-- Main Content -->
+        <!-- Main Content Area -->
         <main class="content">
             <iframe id="task-frame" src="landing.html" frameborder="0"></iframe>
         </main>
+
     </div>
 
     <script src="script.js"></script>
