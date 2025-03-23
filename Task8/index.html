@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                text-align: center;
+            }
+
+            .input_div {
+                margin-bottom: 20px;
+            }
+
+            input {
+                width: 300px;
+                font-size: 18px;
+                padding: 8px;
+                margin: 10px;
+            }
+
+            #output {
+                background-color: #f2f2f2;
+                cursor: not-allowed;
+            }
+        </style>
+        <script>
+            function generate() {
+                let txt = document.getElementById("input").value;
+                let output = txt.toUpperCase();
+                document.getElementById("output").value = output;
+            }
+        </script>
+    </head>
+
+    <body>
+        <h2>Text to Uppercase Converter</h2>
+        <div class="input_div">
+            <input placeholder="Enter some text here" id="input" onkeyup="generate()"/>
+            <input placeholder="Output will appear here" id="output" disabled/>
+        </div>          
+    </body>
+</html>

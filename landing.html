@@ -1,0 +1,72 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f4f8;
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #2c2c3e;
+        }
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        .emoji {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button-container button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .button-container button:hover {
+            background-color: #2980b9;
+        }
+        #content {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            text-align: left;
+            font-size: 14px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="emoji">👋</div>
+    <h1>Explore the Art of Classwork in the Dynamic Project Gallery</h1>
+    <p>All classwork tasks are organized here for easy access. Use the sidebar to view each task.</p>
+
+    <div class="button-container">
+        <button onclick="showInfo('aboutMe')">About Me</button>
+        <button onclick="showInfo('contactDetails')">Contact Details</button>
+        <button onclick="showInfo('linkedin')">Social Media</button>
+    </div>
+
+    <div id="content"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

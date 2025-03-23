@@ -1,0 +1,91 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            width: 320px; 
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0;
+            font-size: 14px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+
+        #profile_info {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #333;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Enter Profile Details</h2>
+
+    <input type="text" id="name" placeholder="Name"><br>
+    <input type="text" id="dob" placeholder="DOB (MM/DD/YYYY)"><br>
+    <input type="text" id="age" placeholder="Age"><br>
+    <input type="text" id="education" placeholder="Education"><br>
+    <input type="text" id="address" placeholder="Address"><br>
+    <input type="text" id="state" placeholder="State"><br>
+    <input type="text" id="mobile" placeholder="Mobile"><br>
+
+    <button onclick="InsertProfile()">Insert Profile</button>
+    <button onclick="ShowProfile()">Show Profile</button>
+
+    <h3>Profile Information:</h3>
+    <div id="profile_info">Profile details will appear here.</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

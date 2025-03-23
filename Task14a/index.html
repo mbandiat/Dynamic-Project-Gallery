@@ -1,0 +1,38 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Student Profile </h2>
+
+        <div class="form-group">
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="dob" placeholder="DOB (MM/DD/YYYY)">
+            <input type="text" id="age" placeholder="Age">
+            <input type="text" id="education" placeholder="Education">
+            <input type="text" id="address" placeholder="Address">
+            <input type="text" id="state" placeholder="State">
+            <input type="text" id="mobile" placeholder="Mobile">
+        </div>
+
+        <div class="button-group">
+            <button onclick="InsertProfile()">Insert</button>
+            <button onclick="ShowProfile()">Show</button>
+            <button onclick="clearDisplay()">Clear Display</button>
+            <button onclick="clearInputs()">Clear Inputs</button>
+        </div>
+
+        <div class="form-group">
+            <input type="text" id="Name/Education" placeholder="Search by Name and Education">
+            <button onclick="searchProfiles()">Search</button>
+        </div>
+
+        <div id="profile_info">Profile details will appear here.</div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

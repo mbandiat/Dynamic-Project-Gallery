@@ -1,0 +1,57 @@
+<html>
+<head>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #1e1e2f;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 80%;
+            padding: 12px;
+            font-size: 18px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        #grade_span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h3>Grade Calculator</h3>
+        <input type="number" placeholder="Enter Score" id="score_input" onkeyup="calculateGrade()"/>
+        <p>Your grade is: <span id="grade_span"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

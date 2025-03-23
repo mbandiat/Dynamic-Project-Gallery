@@ -1,0 +1,83 @@
+<html>
+<head>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        input {
+            width: 80%;
+            padding: 12px;
+            font-size: 18px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 80%;
+            padding: 12px;
+            font-size: 18px;
+            margin-top: 10px;
+            background-color: #1e1e2f;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        #demo_div {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <h2>Calculate the Sum of Numbers</h2>
+    <input type="number" id="input_a" placeholder="Enter start value">
+    <input type="number" id="input_b" placeholder="Enter end value">
+    <button onclick="calculate()">Calculate Sum</button>
+    <div id="demo_div"></div>
+</div>
+
+<script>
+    function calculate() {
+        let a = parseInt(document.getElementById("input_a").value);
+        let b = parseInt(document.getElementById("input_b").value);
+        let sum = 0;
+        
+        for (let i = a; i <= b; i++) {
+            sum += i;
+        }
+        
+        document.getElementById("demo_div").innerHTML = "The sum is: " + sum;
+    }
+</script>
+
+</body>
+</html>

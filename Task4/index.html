@@ -1,0 +1,45 @@
+<html>
+<head>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #1e1e2f;
+            color: white;
+        }
+        button:hover {
+            background-color: #1e1e2f;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to JavaScript</h2>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button onclick="greet()">Enter</button>
+    <p id="message"></p>
+
+    <script>
+        function greet() {
+            let username = document.getElementById("username").value;
+            document.getElementById("message").innerText = "Welcome to JS " + username;
+        }
+    </script>
+</body>
+</html>
